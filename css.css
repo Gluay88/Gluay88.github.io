@@ -1,0 +1,132 @@
+
+* {
+  font-family: 'Oswald', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+body {
+  /*key: value;*/
+  /*background-color: rgb(41, 65, 171);
+  color: #fff;
+  */
+  background-image: url(https://image.freepik.com/free-vector/zombie-biker-head-isolated-black_43623-910.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  /*background-blend-mode: lighten;*/
+}
+
+ #container {
+
+ }
+h1 {
+  font-size: 100px;
+  font-style: italic;
+  font-weight: 600;
+  color: #1ED760;
+  letter-spacing: 15px;
+  /*text-shadow: 2px 2px #000;*/
+  animation: bounceIn 4s infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  text-align: center:x;
+  background-color: #081D44;
+  margin: 30px 0 0 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+
+}
+
+#bgTran {
+
+
+}
+
+#gameRules {
+  background-color: #000;
+  margin: 25px 0;
+  display:block;
+  padding: 0 0 10px 0;
+}
+#h3Font {
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  font-style: italic;
+  letter-spacing: 2px;
+  background-color: #000;
+  margin-bottom: 25px;
+
+}
+
+a {
+  text-decoration: none;
+  color:#D83519;
+  display: inline;
+  width: 100px;
+  height:auto;
+  border: 2px solid #fff;
+  padding: 1px 20px 3px 20px;
+  background-color:  rgb(255, 205, 210);
+  font-weight: bold;
+}
+a:hover {
+  background-color:#fff;
+}
+ /*background-color: rgb(255, 205, 210);     #D83519   */
+p {
+  font-size: 30px;
+  /*color: rgb(255, 205, 210);*/
+  /*text-shadow: 2px 2px #000;*/
+  color: white;
+
+
+}
+
+li {
+  font-size: 20px;
+  color: rgb(255, 205, 210);
+  list-style-type: none;
+}
+
+#gameboard {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+}
+ #gameboard:hover {
+   /*cursor: url(https://image.freepik.com/free-vector/skull-top-hat-vector-illustration-head-scary-character-gentleman-cylinder-hat_74855-10948.jpg) 16 0 auto;
+   */
+
+ }
+ tr {
+   background-color: darkgray;
+ }
+footer {
+  background-color: rgb(255, 205, 210);
+  padding: 55px 0;
+  color:#D83519;
+}
+
+.table-row {
+  border : 2px solid white;
+}
+
+#restartGB {
+  width: 300px;
+  height: auto;
+}
+
+/*******************************/
+@keyframes bounceIn {
+  0% {
+    transform: scaleX(0.5);
+  }
+  60% {
+    transform: scaleX(1.6);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
