@@ -1,48 +1,31 @@
+//create a random number for tresures
+var treasureLocation = Math.floor(Math.random() * 16);
+var bombLocation = Math.floor(Math.random() * 16);
 
-var ranDomNum = Math.floor(Math.random() * 9);
-
-const treasure = (location) => {
-//  alert(location);
-  if (location == ranDomNum ) {
-    alert("Jackpot");
-  } else {
-    alert("Nah");
-  }
+//treasure and bomb are not the same number
+if (treasureLocation === bombLocation) {
+  bombLocation = Math.floor(Math.random() * 16);
 }
+console.log(treasureLocation, bombLocation);
 
-
-
-/*
+//couter 
 var counter = 10;
-function treasure(location){
-  counter = counter - 1;
-  document.getElementById("counter").innerHTML = (`counter: ${counter}`;
 
-  if(treasureLocation === location) {
-    document.getElementById("outcome").innerHTML = "YEAH! You got it!!";
+function treasure(location) {
+  counter = counter - 1;
+  document.getElementById("counter").innerHTML = `Counter: ${counter}`;
+
+  if (treasureLocation === location) {
+    document.getElementById("outcome").innerHTML = "You win! 🥇";
     document.getElementById("gameboard").innerHTML = "";
-  }
-  else if(bombLocation === location) {
-    document.getElementById("outcome").innerHTML = " NAH!!";
+  } else if (bombLocation === location) {
+    document.getElementById("outcome").innerHTML = "You lose! 💀";
     document.getElementById("gameboard").innerHTML = "";
-  }
-  else if(treasureLocation !== location && bombLocation !== location) {
-    document.getElementById(location).innerHTML = "";
-  }
-  else if(counter === 0) {
-    document.getElementById("outcome").innerHTML = " NAH!!";
+  } else if (treasureLocation !== location && bombLocation !== location) {
+    document.getElementById(location).innerHTML = "🍺";
+  } else if (counter === 0) {
+    document.getElementById("outcome").innerHTML = "You lose! 💀";
     document.getElementById("gameboard").innerHTML = "";
   }
   document.getElementById(location).disabled = true;
 }
-treasure(location);
-*/
-
-
-
-
-// location.reload();
-// var ranDomNum = Math.floor(Math.random() * 9);
-
-
-// var askQuestion = prompt("Can I ask a question?");
