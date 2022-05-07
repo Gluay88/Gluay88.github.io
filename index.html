@@ -1,69 +1,128 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Crystal Skulls - Treasure Hunt </title>
-    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/e/e3/Skull-Icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Crystal Skulls</title>
+    <link
+      rel="shortcut icon"
+      href="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-<div id"container">
-<!--p id="wordParagraph"></p>
-<button type="button" name="button" onclick="showWord()">SHOW IT</button>-->
-<div id="bgTran">
-    <h1>Crystal Skulls</h1>
-    <h3 id="h3Font">Treasure Hunt</h3>
-</div>
-    <!--Navigation-->
-     <nav>
-       <a href="https://en.wikipedia.org/wiki/Crystal_skull" target="_blank">Crystal Skulls_Wiki</a>
-       <a href="#bottom"> &#8681; Take me to..the bottom</a>
-     </nav>
+    <h1 id="top-page">Crystal Skulls</h1>
 
-<div id="gameRules">
-    <p>How to play</p>
-    <ul>
-      <li>Click the boxes to reveal the skulls</li>
-      <li>If you click on the tomb, you lose</li>
-      <li>If you click on the skull, you win</li>
-    </ul>
-  </div>
-
-    <img src="https://image.freepik.com/free-vector/green-pirate-skull-background_1152-23.jpg" alt="Skull Pic" height="300px" >
-
+    <div id="rules-section">
+      <h3>How to play</h3>
+      <p>Click on one of the skulls below</p>
+      <p>If you find the treasure, You Win!</p>
+      <p>If you find the skull, You Lose!</p>
+    </div>
 
     <div id="gameboard">
-    <table border="1"><!--1 equal True--> <!--gameboard-->
-      <tr class="table-row"><!--Row-->
-        <td id="0" onclick="treasure(0)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
-        <td id="1" onclick="treasure(1)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
-        <td id="2" onclick="treasure(2)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
-      </tr>
-
-      <tr class="table-row">
-        <td id="3" onclick="treasure(3)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
-        <td id="4" onclick="treasure(4)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
-        <td id="5" onclick="treasure(5)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
-      </tr>
-
-      <tr class="table-row">
-        <td id="6" onclick="treasure(6)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
-        <td id="7" onclick="treasure(7)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
-        <td id="8" onclick="treasure(8)"><img src="https://image.flaticon.com/icons/png/512/1182/1182604.png" alt="Skull pic" width="200px;"></td>
-      </tr>
-    </table>
-  </div><!-- gameboard end-->
-
-    <!--<button type="button" name="button" onclick="location.reload">Restart Game</button>-->
-    <button id="restartGB" type="button" onClick="location.reload();">Restart</button>
-
-    <p id="bottom">This is the bottom.. hahaha!</p>
-    <footer>&copy; 2021 <a href="file:///C:/Users/gluit/OneDrive/Desktop/JumpStart_G/index.html">Crystal Skulls</a> - Mission Beach Team - Gluay, Veronica and Frank</footer>
-    <script type="text/javascript" src="treasurehunt.js">
-    </script>
-  </div><!-- container-->
+      <table>
+        <tr>
+          <td id="0" onclick="treasure(0)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="1" onclick="treasure(1)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="2" onclick="treasure(2)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="3" onclick="treasure(3)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td id="4" onclick="treasure(4)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="5" onclick="treasure(5)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="6" onclick="treasure(6)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="7" onclick="treasure(7)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td id="8" onclick="treasure(8)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="9" onclick="treasure(9)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="10" onclick="treasure(10)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="11" onclick="treasure(11)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td id="12" onclick="treasure(12)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="13" onclick="treasure(13)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="14" onclick="treasure(14)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+          <td id="15" onclick="treasure(15)">
+            <img
+              src="https://img.freepik.com/free-vector/skull-judge-wig_225004-1717.jpg?t=st=1651953784~exp=1651954384~hmac=bc7e0fbfc218292ff59120063bdc2a3bd2005b7e261746deb587d9079539f87c&w=740"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <p id="outcome"></p>
+    <div id="bottom-section">
+      <h3 id="counter">Turns remaining : 10</h3>
+      <button type="button" onclick="location.reload()">Restart Game</button>
+      <br />
+      <br />
+      <br />
+    </div>
+    <script type="text/javascript" src="js-main.js"></script>
+    <div id="footer">
+      <p>Copyright &copy; 2022 - Gluay S. Wang</p>
+    </div>
   </body>
 </html>
