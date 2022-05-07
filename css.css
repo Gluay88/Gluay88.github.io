@@ -1,132 +1,129 @@
-
 * {
-  font-family: 'Oswald', sans-serif;
-  margin: 0 auto;
-  text-align: center;
+  font-family: "Oswald", sans-serif;
 }
 body {
-  /*key: value;*/
-  /*background-color: rgb(41, 65, 171);
-  color: #fff;
-  */
-  background-image: url(https://image.freepik.com/free-vector/zombie-biker-head-isolated-black_43623-910.jpg);
+  background-image: url(https://img.freepik.com/free-vector/zombie-biker-head-isolated-black_43623-910.jpg?t=st=1651960167~exp=1651960767~hmac=bb2016843ffac6942009fd974bcb8d960a2fab4a05049cc52de403b9497966bd&w=826);
   background-position: center;
-  background-size: cover;
   background-attachment: fixed;
-  /*background-blend-mode: lighten;*/
 }
-
- #container {
-
- }
 h1 {
-  font-size: 100px;
-  font-style: italic;
+  font-size: 80px;
+  padding: 10px;
   font-weight: 600;
-  color: #1ED760;
   letter-spacing: 15px;
-  /*text-shadow: 2px 2px #000;*/
-  animation: bounceIn 4s infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-  text-align: center:x;
-  background-color: #081D44;
-  margin: 30px 0 0 0;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-
-}
-
-#bgTran {
-
-
-}
-
-#gameRules {
-  background-color: #000;
-  margin: 25px 0;
-  display:block;
-  padding: 0 0 10px 0;
-}
-#h3Font {
-  color: white;
-  font-family: 'Oswald', sans-serif;
-  font-size: 60px;
+  color: #1ed760;
+  text-align: center;
   font-style: italic;
-  letter-spacing: 2px;
-  background-color: #000;
-  margin-bottom: 25px;
-
+  background-color: #081d44;
 }
-
-a {
-  text-decoration: none;
-  color:#D83519;
-  display: inline;
-  width: 100px;
-  height:auto;
-  border: 2px solid #fff;
-  padding: 1px 20px 3px 20px;
-  background-color:  rgb(255, 205, 210);
-  font-weight: bold;
-}
-a:hover {
-  background-color:#fff;
-}
- /*background-color: rgb(255, 205, 210);     #D83519   */
-p {
-  font-size: 30px;
-  /*color: rgb(255, 205, 210);*/
-  /*text-shadow: 2px 2px #000;*/
+h2 {
   color: white;
-
-
+  font-size: 2rem;
+}
+#treasure-pic {
+  text-align: center;
 }
 
-li {
-  font-size: 20px;
-  color: rgb(255, 205, 210);
-  list-style-type: none;
+#rules-section {
+  color: rgb(255, 241, 242);
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-style: italic;
+  background-color: black;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
 #gameboard {
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
 }
- #gameboard:hover {
-   /*cursor: url(https://image.freepik.com/free-vector/skull-top-hat-vector-illustration-head-scary-character-gentleman-cylinder-hat_74855-10948.jpg) 16 0 auto;
-   */
 
- }
- tr {
-   background-color: darkgray;
- }
-footer {
+#gameboard:hover {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='100' height='108' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🏴‍☠️</text></svg>")
+      16 0,
+    auto;
+}
+
+table {
+  border: 2px solid black;
+  background-color: #fff;
+  width: 50%;
+  margin: 0 auto;
+}
+
+td {
+  border: 1px solid #081d44;
+  font-size: 100px;
+  width: 20%;
+}
+td img {
+  width: 100%;
+}
+
+td:hover {
+  color: #cce0ff;
+}
+
+#outcome {
+  text-align: center;
+  font-size: 100px;
+  color: rgb(255, 205, 210);
+  letter-spacing: 5px;
+  background-color: #081d44;
+  width: 50%;
+  height: 210px;
+  margin: 0 auto;
+}
+
+#bottom-section {
+  color: #cce0ff;
+  text-align: center;
+  font-size: 25px;
+  background-color: black;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 25px;
+  margin-bottom: 50px;
+  margin-top: -50px;
+}
+
+button {
+  margin: 10px;
+  padding: 20px 50px;
+  font-size: 20px;
+  background-color: #1ed760;
+  color: #081d44;
+  border-radius: 12px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+button:hover {
   background-color: rgb(255, 205, 210);
-  padding: 55px 0;
-  color:#D83519;
 }
 
-.table-row {
-  border : 2px solid white;
+a:hover {
+  color: #cce0ff;
 }
-
-#restartGB {
-  width: 300px;
-  height: auto;
+h3#counter {
+  font-size: 45px;
+  letter-spacing: 5px;
+  color: rgb(255, 205, 210);
 }
-
-/*******************************/
-@keyframes bounceIn {
-  0% {
-    transform: scaleX(0.5);
-  }
-  60% {
-    transform: scaleX(1.6);
-  }
-  100% {
-    transform: scaleX(1);
-  }
+#footer {
+  letter-spacing: 3px;
+  width: 100%;
+  height: 10rem;
+  background-color: rgb(255, 205, 210);
+  color: #081d44;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
